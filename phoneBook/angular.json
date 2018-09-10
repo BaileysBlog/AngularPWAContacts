@@ -68,17 +68,30 @@
               "vendorChunk": false,
               "buildOptimizer": true,
               "serviceWorker": true
+            },
+            "hmr": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.hmr.ts"
+                }
+              ]
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "phoneBook:build"
+            "browserTarget": "phoneBook:build",
+            "hmrWarning": false
           },
           "configurations": {
             "production": {
               "browserTarget": "phoneBook:build:production"
+            },
+            "hmr": {
+              "hmr": true,
+              "browserTarget": "phoneBook:build:hmr"
             }
           }
         },
