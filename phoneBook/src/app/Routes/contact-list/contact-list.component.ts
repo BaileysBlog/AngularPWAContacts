@@ -16,7 +16,7 @@ export class ContactListComponent implements OnInit {
     for (let index = 0; index < ranNum; index++)
     {
       this.Contacts.push({
-        Name: `${index}) Bailey Miller`,
+        Name: `${index+1}) Bailey Miller`,
         Id: index
       });
     }
