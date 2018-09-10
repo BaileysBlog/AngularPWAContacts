@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-contact-preview',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-preview.component.css']
 })
 export class ContactPreviewComponent implements OnInit {
+
+  @Input() name: string;
 
   constructor() { }
 

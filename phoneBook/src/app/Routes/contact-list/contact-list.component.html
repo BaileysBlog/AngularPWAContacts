@@ -1,7 +1,7 @@
 <div class="parent">
   <div class="contact-scroller">
     <mat-nav-list>
-      <app-contact-preview></app-contact-preview>
+      <app-contact-preview *ngFor="let con of Contacts" (click)="NavigateToContactView(con.Id)" [name]="con.Name"></app-contact-preview>
     </mat-nav-list>
   </div>
   <div class="contact-viewer">
