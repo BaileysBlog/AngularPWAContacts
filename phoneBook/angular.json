@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "phone-book": {
+    "phoneBook": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -35,7 +35,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/phone-book",
+            "outputPath": "dist/phoneBook",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "phone-book:build"
+            "browserTarget": "phoneBook:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "phone-book:build:production"
+              "browserTarget": "phoneBook:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "phone-book:build"
+            "browserTarget": "phoneBook:build"
           }
         },
         "test": {
@@ -117,7 +117,7 @@
         }
       }
     },
-    "phone-book-e2e": {
+    "phoneBook-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -125,11 +125,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "phone-book:serve"
+            "devServerTarget": "phoneBook:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "phone-book:serve:production"
+              "devServerTarget": "phoneBook:serve:production"
             }
           }
         },
@@ -145,5 +145,5 @@
       }
     }
   },
-  "defaultProject": "phone-book"
+  "defaultProject": "phoneBook"
 }
