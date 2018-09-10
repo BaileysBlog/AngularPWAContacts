@@ -1,0 +1,22 @@
+.parent
+{
+    display: flex;
+    align-items: flex-start;
+    height: calc(100% - 64px);
+}
+
+.mat-nav-list
+{
+    padding-top: 0;
+}
+
+.contact-scroller
+{
+    width: 20%;
+}
+
+.contact-viewer
+{
+    flex-grow: 1;
+    height: 100%;
+}

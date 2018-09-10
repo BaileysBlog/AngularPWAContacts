@@ -11,13 +11,17 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatMenuModule } from '@angular/material';
 import { ContactListComponent } from './Routes/contact-list/contact-list.component';
 import { SettingsComponent } from './Routes/settings/settings.component';
+import { ContactPreviewComponent } from './Components/contact-preview/contact-preview.component';
+import { ContactViewerComponent } from './Routes/contact-viewer/contact-viewer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainLayoutComponent,
     ContactListComponent,
-    SettingsComponent
+    SettingsComponent,
+    ContactPreviewComponent,
+    ContactViewerComponent
   ],
   imports: [
     BrowserModule,
