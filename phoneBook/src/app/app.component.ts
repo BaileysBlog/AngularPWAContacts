@@ -7,8 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'phoneBook';
-<<<<<<< HEAD
-  constructor() { }
-=======
->>>>>>> parent of ab27a6b... Removed test things
 }
