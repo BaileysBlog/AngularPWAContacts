@@ -2,17 +2,37 @@
   
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <span>Contacts</span>
 
+
+      <!-- If search.active then this whole bar needs to become a text box with an exit arrow on the left -->
+
+      <!-- This section needs to be wrapped inside a component because it will change based on current route -->
       <span class="right-spacer"></span>
       
+     
       <button mat-icon-button>
         <mat-icon>search</mat-icon>
       </button>
 
-      <button mat-icon-button>
+      <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
         <mat-icon>more_vert</mat-icon>
       </button>
+
+      <mat-menu #menu="matMenu" xPosition="before">
+        <button mat-menu-item>
+          <span>Select</span>
+        </button>
+
+        <button mat-menu-item>
+          <span>Select All</span>
+        </button>
+      
+        <button mat-menu-item [routerLink]="['/Settings']">
+          <mat-icon>settings</mat-icon>
+          <span>Settings</span>
+        </button>
+      </mat-menu>
+
     </mat-toolbar>
     <ng-content></ng-content>
   </mat-sidenav-content>

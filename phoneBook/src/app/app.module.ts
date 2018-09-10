@@ -8,14 +8,16 @@ import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatMenuModule } from '@angular/material';
 import { ContactListComponent } from './Routes/contact-list/contact-list.component';
+import { SettingsComponent } from './Routes/settings/settings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainLayoutComponent,
-    ContactListComponent
+    ContactListComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { ContactListComponent } from './Routes/contact-list/contact-list.compone
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
